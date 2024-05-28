@@ -418,7 +418,6 @@
       display: flex;
       justify-content: flex-end;
       align-items: center; /* Center the navigation items vertically */
-      margin-right: -29rem; /* Add margin to the right */
     }
     #navigation #navbar-menu ul li {
       list-style: none;
