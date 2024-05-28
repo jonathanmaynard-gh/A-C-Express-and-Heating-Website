@@ -1,0 +1,80 @@
+---
+layout: 'base.html'
+description: 'Meta description for the page'
+metaTitle: 'Title that shows up on google searches'
+tagTitle: 'Contact'
+preloadImg: '/images/cabinets2-1920w.webp'
+preloadCSS: '/css/contact.css'
+permalink: 'contact/'
+eleventyNavigation:
+    key: Contact
+    order: 600
+---
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">Contact Us</h1>
+  {% image './src/images/img17.jpg', 'cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+</section>
+
+<!-- ============================================ -->
+<!--                Contact Form                  -->
+<!-- ============================================ -->
+
+<section id="cs-contact">
+  <div class="cs-container">
+    <form id="cs-form" name="Contact Form" action="https://formspree.io/f/xnqeagrv" method="POST">
+      <div class="cs-content">
+        <span class="cs-topper">Contact</span>
+        <h2 class="cs-title">Get in Touch</h2>
+        <p class="cs-text">
+                    For any inquiries or collaborations, please feel free to reach out. We value your interest and look forward to hearing from you.
+                </p>
+      </div>
+      <label for="name">
+                Name
+                <input required type="text" id="name" name="name" placeholder="Name">
+      </label>
+      <label for="email">
+                Email
+                <input required type="text" id="email" name="email" placeholder="Email">
+      </label>
+      <label for="phone">
+                Phone
+                <input required type="text" id="phone" name="phone" placeholder="Phone">
+      </label>
+      <label for="find-us">
+                How Did You Find Us (Optional)
+                <input type="text" id="find" name="find-us" placeholder="How did you find us?">
+      </label>
+      <label class="cs-label-message" for="message">  
+                Message
+                <textarea required name="message" id="message" placeholder="Write message..."></textarea>
+      </label>
+      <button class="cs-button-solid" type="submit">Submit Message</button>
+    </form>
+    <div class="cs-right-section">
+      <!--Email
+      <span class="cs-header">Email</span>
+      <a class="cs-link" href="mailto:support@yourdomain.com">support@yourdomain.com</a>
+      -->
+      <!--Phone-
+      <span class="cs-header">Phone</span>
+      <a class="cs-link" href="tel:219-555-1234">(219) 555-1234</a>
+      -->
+
+      <!--Address
+      <span class="cs-header">Address</span>
+      <a class="cs-link" href="">2553 Woodbridge Lane, <span class="cs-block">Boston Ware 120</span></a>
+      -->
+      
+      <!-- Background Image-->
+      {% image './src/images/reee.jpg', 'bottom', '', 'lazy'%}
+    </div>
+  </div>
+</section>

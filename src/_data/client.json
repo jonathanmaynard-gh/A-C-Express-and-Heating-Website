@@ -1,0 +1,14 @@
+{
+  "name": "Whale Eye Woodworks",
+  "email": "whaleeyewoodworks@gmail.com",
+  "phone": "917-935-3911",
+  "phoneFormatted": "(917) 935-3911",
+  "address": {
+    "lineOne": "2194 Florida A1A, Indian Harbour Beach, FL 32937",
+    "city": "Indian Harbour Beach",
+    "county": "BRE",
+    "postcode": "32937",
+    "mapLink": "https://maps.app.goo.gl/KH36Qx48cRA1ExMK9"
+  },
+  "domain": "www.website.com"
+}
