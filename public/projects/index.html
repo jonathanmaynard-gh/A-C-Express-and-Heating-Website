@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Swap our for actual link-->
+        <link rel="canonical" href="https://www.website.com/projects/">
+
+        <meta name="description" content="Meta description for the page">
+        <meta name="keywords" content="">
+
+        <!--Social Media Display-->
+        <meta property="og:title" content="Title that shows up on google searches"/>
+        <meta property="og:description" content="Meta description for the page"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://www.website.com/projects/"/>
+        <meta property="og:image" content="/images/social.jpg"/>
+        <meta property="og:image:secure_url" content="/images/social.jpg"/>
+
+        <!--Favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicons/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Preload -->
+        <link rel="preload" as="image" href="/assets/logo-light.png">
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+        <link rel="stylesheet" href="/css/root.css">
+        <link rel="stylesheet" href="/css/dark.css">
+
+        <link rel="preload" as="image" href="/images/cabinets2-1920w.webp"/>
+
+        <!-- Loading in page specific CSS sheets from css block -->
+        <link rel="stylesheet" href="/css/critical.css"/>
+        <link rel="stylesheet" href="/css/projects.css">
+
+        <!--Put analytics tag here at the bottom to prevent it from render blocking-->
+
+        <!-- For home page, use full title, including location for SEO. Other pages should just include the page name -->
+        <title>
+            
+                Projects | A/C Express &amp; Heating
+            
+        </title>
+    </head>
+    <body>
+        <!--Screen reader skip main nav-->
+        <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+        <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+
+<div id="navigation">
+    <div aria-hidden="true" class="background-color-div">
+        <!--This div is used to overcome a z-index issue where the open
+            #navbar-menu is on top of the #navigation. This bar places itself 
+            the #navbar-menu so that menu appears behind the #navigation
+        -->
+    </div>
+    <div class="container">
+        <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
+        <a class="logo" aria-label="click to go to home page" href="/">
+            <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
+            <img class="light" aria-hidden="true" src="/assets/images/logo-light.png" decoding="async" alt="logo" width="221" height="66">
+
+            <!--Dark Colored Logo-->
+            <img class="dark" aria-hidden="true" src="/assets/images/logo-light.png" decoding="async" loading="lazy" alt="logo" width="221" height="66">
+        </a>
+
+        <!--Mobile Nav toggle-->
+        <button class="hamburger-menu" aria-expanded="false" aria-controls="navbar-menu">
+            <!--<span class="visually-hidden">Menu</span>-->
+            <span aria-hidden="true"></span>
+        </button>
+
+        <!--Main Nav-->
+        <nav id="navbar-menu" aria-label="main navigation">
+            <ul>
+                    <li>
+                        <a 
+                        
+                        href="/"
+                    >
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                         class="active" 
+                        href="/projects/"
+                    >
+                            Gallery
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                        
+                        href="/reviews/"
+                    >
+                            Reviews
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                        
+                        href="/contact/"
+                    >
+                            Contact
+                        </a>
+                    </li>
+            </ul>
+        </nav>
+
+        <!--Dark Mode toggle-->
+        <button id="dark-mode-toggle">
+            <!--Moon is an inline SVG so you can edit the color if needed-->
+            <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="sun" aria-hidden="true" src="/assets/svgs/sun.svg" decoding="async" alt="sun" width="15" height="15">
+        </button>
+    </div>
+</div>
+
+        <main id="main">
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">Our Work</h1>
+  <picture class="">
+      <source type="image/webp" srcset="/images/img17-200w.webp 200w, /images/img17-400w.webp 400w, /images/img17-850w.webp 850w" sizes="(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px">
+  <source type="image/jpeg" srcset="/images/img17-200w.jpeg 200w, /images/img17-400w.jpeg 400w, /images/img17-850w.jpeg 850w" sizes="(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px">
+      <img
+        src="/images/img17-200w.jpeg"
+        width="850"
+        height="347"
+        alt="cabinets"
+        loading="lazy"
+        decoding="async">
+    </picture>
+
+</section>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <!-- Row 1-->
+      <div class="cs-row cs-row-1">
+        <picture class="cs-picture cs-picture-1">
+      <source type="image/webp" srcset="/images/img1-200w.webp 200w, /images/img1-400w.webp 400w, /images/img1-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img1-200w.jpeg 200w, /images/img1-400w.jpeg 400w, /images/img1-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img1-200w.jpeg"
+        width="850"
+        height="1128"
+        alt="new hallway"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-2">
+      <source type="image/webp" srcset="/images/img2-200w.webp 200w, /images/img2-400w.webp 400w, /images/img2-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img2-200w.jpeg 200w, /images/img2-400w.jpeg 400w, /images/img2-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img2-200w.jpeg"
+        width="850"
+        height="640"
+        alt="new home construction"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img3-200w.webp 200w, /images/img3-400w.webp 400w, /images/img3-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img3-200w.jpeg 200w, /images/img3-400w.jpeg 400w, /images/img3-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img3-200w.jpeg"
+        width="850"
+        height="850"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img4-200w.webp 200w, /images/img4-400w.webp 400w, /images/img4-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img4-200w.jpeg 200w, /images/img4-400w.jpeg 400w, /images/img4-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img4-200w.jpeg"
+        width="850"
+        height="850"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img5-200w.webp 200w, /images/img5-400w.webp 400w, /images/img5-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img5-200w.jpeg 200w, /images/img5-400w.jpeg 400w, /images/img5-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img5-200w.jpeg"
+        width="850"
+        height="850"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img6-200w.webp 200w, /images/img6-400w.webp 400w, /images/img6-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img6-200w.jpeg 200w, /images/img6-400w.jpeg 400w, /images/img6-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img6-200w.jpeg"
+        width="850"
+        height="850"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img7-200w.webp 200w, /images/img7-400w.webp 400w, /images/img7-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img7-200w.jpeg 200w, /images/img7-400w.jpeg 400w, /images/img7-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img7-200w.jpeg"
+        width="850"
+        height="850"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img8-200w.webp 200w, /images/img8-400w.webp 400w, /images/img8-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img8-200w.jpeg 200w, /images/img8-400w.jpeg 400w, /images/img8-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img8-200w.jpeg"
+        width="850"
+        height="850"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img9-200w.webp 200w, /images/img9-400w.webp 400w, /images/img9-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img9-200w.jpeg 200w, /images/img9-400w.jpeg 400w, /images/img9-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img9-200w.jpeg"
+        width="850"
+        height="850"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img10-200w.webp 200w, /images/img10-400w.webp 400w, /images/img10-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img10-200w.jpeg 200w, /images/img10-400w.jpeg 400w, /images/img10-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img10-200w.jpeg"
+        width="850"
+        height="850"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+
+        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+      </div>
+      <!-- Row 2 -->
+      <div class="cs-row cs-row-2">
+        <picture class="cs-picture cs-picture-1">
+      <source type="image/webp" srcset="/images/img11-200w.webp 200w, /images/img11-400w.webp 400w, /images/img11-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img11-200w.jpeg 200w, /images/img11-400w.jpeg 400w, /images/img11-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img11-200w.jpeg"
+        width="850"
+        height="1511"
+        alt="new kitchen"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-2">
+      <source type="image/webp" srcset="/images/img12-200w.webp 200w, /images/img12-400w.webp 400w, /images/img12-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img12-200w.jpeg 200w, /images/img12-400w.jpeg 400w, /images/img12-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img12-200w.jpeg"
+        width="850"
+        height="1511"
+        alt="apartment addition"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img13-200w.webp 200w, /images/img13-400w.webp 400w, /images/img13-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img13-200w.jpeg 200w, /images/img13-400w.jpeg 400w, /images/img13-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img13-200w.jpeg"
+        width="850"
+        height="1511"
+        alt="kew kitchen cabinets"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img14-200w.webp 200w, /images/img14-400w.webp 400w, /images/img14-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img14-200w.jpeg 200w, /images/img14-400w.jpeg 400w, /images/img14-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img14-200w.jpeg"
+        width="850"
+        height="1511"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img15-200w.webp 200w, /images/img15-400w.webp 400w, /images/img15-850w.webp 850w, /images/img15-1920w.webp 1920w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img15-200w.jpeg 200w, /images/img15-400w.jpeg 400w, /images/img15-850w.jpeg 850w, /images/img15-1920w.jpeg 1920w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img15-200w.jpeg"
+        width="1920"
+        height="1080"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img16-200w.webp 200w, /images/img16-400w.webp 400w, /images/img16-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img16-200w.jpeg 200w, /images/img16-400w.jpeg 400w, /images/img16-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img16-200w.jpeg"
+        width="850"
+        height="1511"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img17-200w.webp 200w, /images/img17-400w.webp 400w, /images/img17-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img17-200w.jpeg 200w, /images/img17-400w.jpeg 400w, /images/img17-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img17-200w.jpeg"
+        width="850"
+        height="347"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img18-200w.webp 200w, /images/img18-400w.webp 400w, /images/img18-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img18-200w.jpeg 200w, /images/img18-400w.jpeg 400w, /images/img18-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img18-200w.jpeg"
+        width="850"
+        height="1796"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img19-200w.webp 200w, /images/img19-400w.webp 400w, /images/img19-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img19-200w.jpeg 200w, /images/img19-400w.jpeg 400w, /images/img19-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img19-200w.jpeg"
+        width="850"
+        height="1815"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        
+        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+      </div>
+      <!-- Row 3 -->
+      <div class="cs-row cs-row-3">
+        <picture class="cs-picture cs-picture-1">
+      <source type="image/webp" srcset="/images/img20-200w.webp 200w, /images/img20-400w.webp 400w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img20-200w.jpeg 200w, /images/img20-400w.jpeg 400w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img20-200w.jpeg"
+        width="400"
+        height="847"
+        alt="new kitchen"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-2">
+      <source type="image/webp" srcset="/images/img21-200w.webp 200w, /images/img21-400w.webp 400w, /images/img21-850w.webp 850w, /images/img21-1920w.webp 1920w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img21-200w.jpeg 200w, /images/img21-400w.jpeg 400w, /images/img21-850w.jpeg 850w, /images/img21-1920w.jpeg 1920w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img21-200w.jpeg"
+        width="1920"
+        height="1440"
+        alt="apartment addition"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img22-200w.webp 200w, /images/img22-400w.webp 400w, /images/img22-850w.webp 850w, /images/img22-1920w.webp 1920w, /images/img22-2500w.webp 2500w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img22-200w.jpeg 200w, /images/img22-400w.jpeg 400w, /images/img22-850w.jpeg 850w, /images/img22-1920w.jpeg 1920w, /images/img22-2500w.jpeg 2500w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img22-200w.jpeg"
+        width="2500"
+        height="1184"
+        alt="kew kitchen cabinets"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img23-200w.webp 200w, /images/img23-400w.webp 400w, /images/img23-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img23-200w.jpeg 200w, /images/img23-400w.jpeg 400w, /images/img23-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img23-200w.jpeg"
+        width="850"
+        height="850"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img24-200w.webp 200w, /images/img24-400w.webp 400w, /images/img24-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img24-200w.jpeg 200w, /images/img24-400w.jpeg 400w, /images/img24-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img24-200w.jpeg"
+        width="850"
+        height="850"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img25-200w.webp 200w, /images/img25-400w.webp 400w, /images/img25-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img25-200w.jpeg 200w, /images/img25-400w.jpeg 400w, /images/img25-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img25-200w.jpeg"
+        width="850"
+        height="850"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img26-200w.webp 200w, /images/img26-400w.webp 400w, /images/img26-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img26-200w.jpeg 200w, /images/img26-400w.jpeg 400w, /images/img26-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img26-200w.jpeg"
+        width="850"
+        height="850"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img27-200w.webp 200w, /images/img27-400w.webp 400w, /images/img27-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img27-200w.jpeg 200w, /images/img27-400w.jpeg 400w, /images/img27-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img27-200w.jpeg"
+        width="850"
+        height="850"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+        <picture class="cs-picture cs-picture-3">
+      <source type="image/webp" srcset="/images/img28-200w.webp 200w, /images/img28-400w.webp 400w, /images/img28-850w.webp 850w" sizes="(max-width: 600px) 200px, 400px">
+  <source type="image/jpeg" srcset="/images/img28-200w.jpeg 200w, /images/img28-400w.jpeg 400w, /images/img28-850w.jpeg 850w" sizes="(max-width: 600px) 200px, 400px">
+      <img
+        src="/images/img28-200w.jpeg"
+        width="850"
+        height="850"
+        alt="building a new wall"
+        loading="lazy"
+        decoding="async">
+    </picture>
+
+        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+      </div>
+    </div>
+    <a href="/reviews" class="button-solid">See Our Reviews</a>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+  <div class="container">
+    <h2 class="title">Get It Done <br> With Us Today</h2>
+    <p>
+            Ready to take the next step? Contact us now and let's turn your vision into reality!
+        </p>
+    <a href="/contact" class="button-solid">Contact Us</a>
+  </div>
+  <picture class="">
+      <source type="image/webp" srcset="/images/img22-200w.webp 200w, /images/img22-400w.webp 400w, /images/img22-850w.webp 850w, /images/img22-1920w.webp 1920w, /images/img22-2500w.webp 2500w" sizes="(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px">
+  <source type="image/jpeg" srcset="/images/img22-200w.jpeg 200w, /images/img22-400w.jpeg 400w, /images/img22-850w.jpeg 850w, /images/img22-1920w.jpeg 1920w, /images/img22-2500w.jpeg 2500w" sizes="(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px">
+      <img
+        src="/images/img22-200w.jpeg"
+        width="2500"
+        height="1184"
+        alt="kitchen cabinets"
+        loading="lazy"
+        decoding="async">
+    </picture>
+</section>
+
+<div id="fullSizeImageModal" style="display:none;">
+  <div id="modalContent">
+    <span id="closeModal" style="cursor:pointer;">&times;</span>
+    <img id="fullSizeImage" src="" style="width: 100%; height: auto;"/>
+    <button id="prevImage" class="modal-nav">&#10094;</button>
+    <button id="nextImage" class="modal-nav">&#10095;</button>
+  </div>
+</div>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById("fullSizeImageModal");
+    var span = document.getElementById("closeModal");
+    // Select images within the gallery section
+    var images = document.querySelectorAll("#gallery .cs-picture img");
+    var currentIndex = 0;
+    var prevButton = document.getElementById("prevImage");
+    var nextButton = document.getElementById("nextImage");
+
+    function positionButtons() {
+        if (window.innerWidth <= 600) {
+            var imageRect = document.getElementById("fullSizeImage").getBoundingClientRect();
+            var offsetFromImageBottom = 20; // Adjust this value to change the distance from the image to the buttons
+            prevButton.style.top = (imageRect.bottom + offsetFromImageBottom) + 'px';
+            nextButton.style.top = (imageRect.bottom + offsetFromImageBottom) + 'px';
+        } else {
+            // Resets the positions for desktop view
+            prevButton.style.top = '';
+            nextButton.style.top = '';
+        }
+    }
+
+    function showModal(index) {
+        var highResImageUrl = images[index].currentSrc || images[index].src;
+        var fullSizeImage = document.getElementById("fullSizeImage");
+
+        fullSizeImage.onload = function() {
+            positionButtons(); // Adjust the button position when the image is loaded
+        };
+
+        fullSizeImage.src = highResImageUrl;
+        modal.style.display = "block";
+        document.body.classList.add('body-modal-open');
+        currentIndex = index;
+
+        positionButtons(); // Adjust the button position for the first image load
+    }
+
+    images.forEach(function(img, index) {
+        img.addEventListener('click', function() {
+            showModal(index);
+        });
+    });
+
+    prevButton.addEventListener('click', function() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showModal(currentIndex);
+    });
+
+    nextButton.addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showModal(currentIndex);
+    });
+
+    span.onclick = function() {
+        modal.style.display = "none";
+        document.body.classList.remove('body-modal-open');
+    };
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            span.onclick();
+        }
+    };
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(event) {
+        if (modal.style.display === "block") { // Ensure the modal is displayed
+            if (event.key === 'ArrowLeft') {
+                // Left arrow key
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                showModal(currentIndex);
+            } else if (event.key === 'ArrowRight') {
+                // Right arrow key
+                currentIndex = (currentIndex + 1) % images.length;
+                showModal(currentIndex);
+            } else if (event.key == 'Escape') {
+                modal.style.display = "none";
+                document.body.classList.remove('body-modal-open');
+            }
+        }
+    });
+
+    var touchStartX = 0;
+    var touchEndX = 0;
+
+    function handleSwipe() {
+        if (touchEndX < touchStartX) {
+            // Swiped left, show next image
+            nextButton.click();
+        } else if (touchEndX > touchStartX) {
+            // Swiped right, show previous image
+            prevButton.click();
+        }
+    }
+
+    modal.addEventListener('touchstart', function(event) {
+        touchStartX = event.changedTouches[0].screenX;
+    }, false);
+
+    modal.addEventListener('touchend', function(event) {
+        touchEndX = event.changedTouches[0].screenX;
+        handleSwipe();
+    }, false);
+
+    // Adjust button position on window resize and load
+    window.addEventListener('resize', positionButtons);
+    window.addEventListener('load', positionButtons);
+});
+
+</script></main>
+        <!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="footer">
+    <div class="container">
+        <div class="left-section">
+            <a class="logo" href="/"><img loading="lazy" decoding="async" src="/assets/images/tosvg.svg" alt="logo" width="264" height="78"></a>
+        </div>
+        <div class="right-section">
+            <div class="lists">
+                <ul>
+                    <li>
+                        <h2>Information</h2>
+                    </li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/projects">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="/reviews">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Services</h2>
+                    </li>
+                    <li>Woodworking</li>
+                    <li>Renovation</li>
+                    <li>Framing & Painting</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Contact</h2>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/KH36Qx48cRA1ExMK9" target="_blank">First Address Line:<br>2194 Florida A1A, <br>Indian Harbour Beach, FL 32937</a>
+                    </li>
+                    <li>
+                        <a href="tel:555-779-4407">T: (917) 935-3911</a>
+                    </li>
+                    <li>
+                        <a href="mailto:whaleeyewoodworks@gmail.com">Click to Email</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="credit">
+        <span>Designed and Hand Coded by</span>
+        <a href="mailto:jonathannmaynard@gmail.com" target="_blank" rel="noopener">Jonathan Maynard</a>
+        <span class="copyright"> Copyright 2023 - Present</span>
+    </div>
+</footer>
+
+        <script defer src="/assets/js/nav.js"></script>
+        <script defer src="/assets/js/dark.js"></script>
+
+        <!--
+        This script adds a class to the body after scrolling 100px
+        and we used these body.scroll styles to create some on scroll 
+        animations with the navbar
+    -->
+        <script defer>
+            document.addEventListener('scroll', (e) => {
+                const scroll = document.documentElement.scrollTop;
+                if (scroll >= 100) {
+                    document
+                        .querySelector('body')
+                        .classList
+                        .add('scroll')
+                } else {
+                    document
+                        .querySelector('body')
+                        .classList
+                        .remove('scroll')
+                }
+            });
+        </script>
+
+    </body>
+</html>
