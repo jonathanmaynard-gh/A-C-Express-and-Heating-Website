@@ -518,13 +518,13 @@
     display: none !important;
   }
   body.dark-mode #navigation #navbar-menu ul li a {
-    color: #fff;
+    color: #1a1a1a;
   }
   body.dark-mode #navigation #navbar-menu ul li a:before {
-    background: var(--accent);
+    background: #1a1a1a;
   }
   body.dark-mode #navigation #navbar-menu ul li a.active {
-    color: var(--primary);
+    color: #1a1a1a;
   }
 }
 /*-- -------------------------- -->
