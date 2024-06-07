@@ -554,6 +554,7 @@
     /* Prevents padding from affecting height & width */
     box-sizing: border-box;
   }
+  
   #reviews .cs-item:last-of-type {
     margin-bottom: 0;
   }
@@ -635,7 +636,7 @@
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: .7;
+    opacity: 0.7;
     top: 0;
     left: 0;
     z-index: -1;

@@ -30,6 +30,8 @@
     content: '';
     width: 100%;
     height: 100%;
+    background: #000;
+    opacity: .7;
     position: absolute;
     display: block;
     top: 0;
@@ -57,7 +59,21 @@
     margin: auto;
     position: relative;
   }
-  
+  #hero .cs-container:before {
+    /* Left Line */
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: -moz-linear-gradient(top, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+  }
   #hero .cs-flex-group {
     /* 60px - 220px */
     margin-bottom: clamp(3.75em, 15.5vw, 13.75em);
@@ -197,6 +213,21 @@
   #hero .cs-container {
     padding: clamp(7em, 27.95vw, 17.5em) 0 clamp(9em, 30.95vw, 23.5em) 0;
   }
+  #hero .cs-container:after {
+    /* Right Line */
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: -moz-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+  }
   #hero .cs-button-solid {
     margin-bottom: 0;
     margin-right: 1.25rem;
@@ -299,5 +330,18 @@
   }
   .services .card {
     max-width: 22.3125em;
+  }
+}
+/* Dark mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #services {
+    background: var(--medium);
+  }
+  body.dark-mode #services picture {
+    background: var(--primaryDark);
+  }
+  body.dark-mode #services h2 {
+    color: #fff;
+    font-weight: bold;
   }
 }
