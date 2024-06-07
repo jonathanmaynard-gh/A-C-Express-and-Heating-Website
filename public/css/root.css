@@ -369,7 +369,7 @@
     color: #1a1a1a;
   }
   body.scroll #dark-mode-toggle svg path {
-    fill: #000;
+    fill: #fff;
   }
   body.dark-mode #navigation .background-color-div {
     height: 100%;

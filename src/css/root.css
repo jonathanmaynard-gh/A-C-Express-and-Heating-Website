@@ -6,8 +6,8 @@
   :root {
     --primary: #0094FF;
     --primaryShade: #0094FF;
-    --primaryDark: #0094FF;
-    --bodyTextColor: #4E4B66;
+    --primaryDark: #fff;
+    --bodyTextColor: #fff;
     --bodyTextColorWhite: #FAFBFC;
     --headerColor: #1a1a1a;
     /* 13px - 16px */
@@ -369,7 +369,7 @@
     color: #1a1a1a;
   }
   body.scroll #dark-mode-toggle svg path {
-    fill: #000;
+    fill: #fff;
   }
   body.dark-mode #navigation .background-color-div {
     height: 100%;
