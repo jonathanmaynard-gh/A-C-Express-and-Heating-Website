@@ -24,23 +24,11 @@ eleventyNavigation:
       <p class="cs-text">
         A/C Express & Heating LLC is a full-service Air Conditioning & Heating company providing quality and dependable service to St. Lucie and Martin counties.
       </p>
-      <a href="contact.html" class="cs-button-solid">Contact Us Today</a>
-      <a href="services.html" class="cs-button-transparent">
-        <img
-          class="cs-img"
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-          alt="play icon"
-          width="17"
-          height="17"
-        />
-        Learn More
-      </a>
+      <a href="/contact" class="cs-button-solid">Contact Us Today</a>
     </div>
   </div>
   <!-- Background Image -->
-  {% image './src/images/aclanding.jpg', 'mountains', 'cs-picture', 'eager', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+  {% image './src/images/hvacimagehero.jpg', 'mountains', 'cs-picture', 'eager', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
 </section>
 
 <!-- ============================================ -->
@@ -54,7 +42,7 @@ eleventyNavigation:
       <img
         aria-hidden="true"
         decoding="async"
-        src="/assets/svgs/service1.svg"
+        src="/assets/air-conditioning.png"
         alt="appliance"
         width="48"
         height="48"
@@ -68,7 +56,7 @@ eleventyNavigation:
       <img
         aria-hidden="true"
         decoding="async"
-        src="/assets/svgs/service2.svg"
+        src="/assets/heating.png"
         alt="appliance"
         width="48"
         height="48"
@@ -82,7 +70,7 @@ eleventyNavigation:
       <img
         aria-hidden="true"
         decoding="async"
-        src="/assets/svgs/service3.svg"
+        src="/assets/prevention.png"
         alt="appliance"
         width="48"
         height="48"
@@ -101,8 +89,8 @@ eleventyNavigation:
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-left">
-      {% image './src/images/cabinets2.jpg', 'house', 'cs-picture cs-picture1', 'lazy'%}
-      {% image './src/images/construction.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%}
+      {% image './src/images/sbsac1.jpg', 'house', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/sbsac2.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%}
     </div>
     <!-- Right Content Section-->
     <div class="cs-right">
@@ -130,7 +118,7 @@ eleventyNavigation:
           height="77"
         />
       </div>
-      <a href="about.html" class="button-solid">More About Us</a>
+      <a href="/contact" class="button-solid">Contact Us Today</a>
     </div>
   </div>
 </section>
@@ -143,8 +131,8 @@ eleventyNavigation:
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-left">
-      {% image './src/images/construction.jpg', 'house', 'cs-picture cs-picture1', 'lazy'%}
-      {% image './src/images/cabinets2.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%}
+      {% image './src/images/sbsac2.jpg', 'house', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/sbsac1.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%}
     </div>
     <!-- Right Content Section-->
     <div class="cs-right">
@@ -156,43 +144,8 @@ eleventyNavigation:
       <p class="cs-text">
         We handle sales, service, repair, and installation of all major brands, ensuring your systems run efficiently and effectively.
       </p>
-      <a href="services.html" class="button-solid">Learn More About Our Services</a>
+      <a href="/contact" class="button-solid">Get an Estimate Now</a>
     </div>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!--                   Gallery                    -->
-<!-- ============================================ -->
-
-<section id="gallery">
-  <div class="cs-container">
-    <span class="cs-topper">Our Work</span>
-    <h2 class="cs-title">Explore a Sampling of Our Portfolio</h2>
-    <div class="cs-image-group">
-      <!-- Row 1-->
-      <div class="cs-row cs-row-1">
-        {% image './src/images/ac1.jpg', 'new hallway', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/ac2.jpg', 'new home construction', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/ac3.jpg', 'building a new wall', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
-      <!-- Row 2 -->
-      <div class="cs-row cs-row-2">
-        {% image './src/images/ac1.jpg', 'new hallway', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/ac2.jpg', 'new home construction', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/ac3.jpg', 'building a new wall', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
-      <!-- Row 3 -->
-      <div class="cs-row cs-row-3">
-        {% image './src/images/ac1.jpg', 'new hallway', 'cs-picture cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/ac2.jpg', 'new home construction', 'cs-picture cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        {% image './src/images/ac3.jpg', 'building a new wall', 'cs-picture cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
-    </div>
-    <a href="/projects" class="button-solid">View Full Gallery</a>
   </div>
 </section>
 
@@ -273,6 +226,7 @@ eleventyNavigation:
   </div>
 </section>
 
+
 <!-- ============================================ -->
 <!--             Final Call to Action             -->
 <!-- ============================================ -->
@@ -288,9 +242,8 @@ eleventyNavigation:
     </p>
     <a href="/contact" class="button-solid">Get an Estimate Now</a>
   </div>
-  {% image './src/images/aclanding.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+  {% image './src/images/ctaimagehvac.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
 </section>
-
 
 <div id="fullSizeImageModal" style="display:none;">
   <div id="modalContent">
@@ -300,7 +253,6 @@ eleventyNavigation:
     <button id="nextImage" class="modal-nav">&#10095;</button>
   </div>
 </div>
-
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
