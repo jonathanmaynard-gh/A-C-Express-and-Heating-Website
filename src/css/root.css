@@ -8,7 +8,7 @@
     --primaryShade: #0094FF;
     --primaryDark: #0094FF;
     --bodyTextColor: #4E4B66;
-    --bodyTextColorWhite: #FAFBFC;
+    --bodyTextColorWhite: #1a1a1a;
     --headerColor: #1a1a1a;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
