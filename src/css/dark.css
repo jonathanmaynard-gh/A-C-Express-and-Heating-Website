@@ -4,12 +4,12 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   :root {
-    --dark: #fff;
-    --medium: #fff;
-    --accent: #fff;
+    --dark: #082032;
+    --medium: #2C394B;
+    --accent: #334756;
   }
   body.dark-mode {
-    background-color: var(#fff);
+    background-color: var(--dark);
   }
   body.dark-mode p,
   body.dark-mode li,
@@ -19,7 +19,7 @@
   body.dark-mode h4,
   body.dark-mode h5,
   body.dark-mode h6 {
-    color: #082032;
+    color: #fff;
   }
   body.dark-mode .light {
     display: none;
