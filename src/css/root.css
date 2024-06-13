@@ -1,12 +1,31 @@
+/* Ensure the card styling is maintained */
+.card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
   :root {
-    --primary: #0081F8;
-    --primaryShade: #0081F8;
-    --primaryDark: #0081F8;
+    --primary: #007BFF;
+    --primaryShade: #007BFF;
+    --primaryDark: #007BFF;
     --bodyTextColor: #4E4B66;
     --bodyTextColorWhite: #FAFBFC;
     --headerColor: #1a1a1a;
@@ -545,7 +564,7 @@
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: .7;
+    opacity: .35;
     top: 0;
     left: 0;
     z-index: -1;
