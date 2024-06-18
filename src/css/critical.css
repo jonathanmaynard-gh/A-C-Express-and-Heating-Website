@@ -42,7 +42,7 @@
   }
   #hero .cs-picture img {
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     height: 100%;
     width: 100%;
@@ -307,4 +307,24 @@
   .services .card {
     max-width: 22.3125em;
   }
+}
+
+#hero .cs-topper {
+  /* existing styles */
+  margin-bottom: 1rem; /* Adjust if needed */
+}
+
+#hero .cs-title {
+  /* Adjust the bottom margin */
+  margin-bottom: 1rem; /* Match the margin-bottom of .cs-topper */
+}
+
+#hero .cs-text {
+  /* existing styles */
+  margin-bottom: 1rem; /* Match the margin-bottom of .cs-title */
+}
+
+#hero .cs-button-solid {
+  /* Adjust the margin-top to match the distance */
+  margin-top: 1rem; /* Match the margin-bottom of .cs-text */
 }
