@@ -23,8 +23,6 @@
     "@11ty/eleventy-navigation": "^0.3.5"
   },
   "dependencies": {
-    "@11ty/eleventy-img": "^2.0.1",
-    "mailgun-js": "^0.22.0",
-    "nodemailer": "^6.7.2"
+    "@11ty/eleventy-img": "^2.0.1"
   }
 }
