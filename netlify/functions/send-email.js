@@ -10,13 +10,14 @@ exports.handler = async (event, context) => {
     });
 
     const data = {
-      from: email,
-      to: 'jonathannmaynard@gmail.com',
+      from: `no-reply@${mg.domain}`,
+      to: 'Acbygreg@gmail.com',
       subject: 'New Contact Form Submission',
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nHow Did You Find Us: ${findUs}\nMessage: ${message}`
     };
 
-    await mg.messages().send(data);
+    const response = await mg.messages().send(data);
+    console.log('Mailgun response:', response);
     return {
       statusCode: 200,
       body: JSON.stringify({ message: 'Message sent successfully!' })
@@ -25,7 +26,7 @@ exports.handler = async (event, context) => {
     console.error('Error sending email:', error);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: error.toString() })
+      body: JSON.stringify({ error: error.message, details: error })
     };
   }
 };
