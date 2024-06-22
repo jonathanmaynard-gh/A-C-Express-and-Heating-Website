@@ -28,14 +28,17 @@ eleventyNavigation:
 
 <section id="cs-contact">
   <div class="cs-container">
-    <form id="cs-form" name="Contact Form" action="https://formspree.io/f/xnqeagrv" method="POST">
+    <form id="cs-form" name="Contact Form" action="/.netlify/functions/send-email" method="POST">
       <div class="cs-content">
         <span class="cs-topper">Contact</span>
         <h2 class="cs-title">Get in Touch</h2>
         <p class="cs-text">
           For any inquiries or collaborations, please feel free to reach out via email, phone, or text. We value your interest and look forward to hearing from you!
-                </p>
+        </p>
+        <p class="cs-text">Our phone number: <a href="tel:772-240-4857">(772) 240-4857</a></p>
+        
       </div>
+      
       <label for="name">
                 Name
                 <input required type="text" id="name" name="name" placeholder="Name">
@@ -66,7 +69,6 @@ eleventyNavigation:
       <!--Phone-
       <span class="cs-header">Phone</span>
       <a class="cs-link" href="tel:219-555-1234">(219) 555-1234</a>
-      -->
 
       <!--Address
       <span class="cs-header">Address</span>
@@ -78,3 +80,25 @@ eleventyNavigation:
     </div>
   </div>
 </section>
+
+<script>
+  document.getElementById('cs-form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData);
+
+    try {
+      const response = await fetch('/.netlify/functions/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+      const result = await response.json();
+      alert(result.message);
+    } catch (error) {
+      alert('There was an error sending your message.');
+    }
+  });
+</script>
