@@ -1,0 +1,325 @@
+#fullSizeImageModal {
+  position: fixed; /* Stay in place */
+  z-index: 999999999999999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  backdrop-filter: blur(8px);
+}
+
+#modalContent {
+  /* Ensure modal content is positioned relatively for absolute child positioning */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-nav {
+  /* Styling for the navigation buttons */
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 3px;
+  z-index: 10;
+}
+
+#prevImage {
+  left: -40px; /* Position the previous button on the left */
+}
+
+#nextImage {
+  right: -40px; /* Position the next button on the right */
+}
+
+.modal-nav:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darken button on hover for better interaction feedback */
+}
+
+#modalContent {
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  width: 40%; /* Could be more or less, depending on screen size */
+  position: relative;
+}
+
+#closeModal {
+  color: white;
+  position: absolute;
+  right: 3px; /* Adjust as needed for proper alignment */
+  top: 0px; /* Adjust as needed for proper alignment */
+  padding: 5px 12px; /* Match padding with .modal-nav */
+  font-size: 24px; /* Match font size with .modal-nav */
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black, matching .modal-nav */
+  border-radius: 3px; /* Match border radius with .modal-nav */
+}
+
+#closeModal:hover,
+#closeModal:focus {
+  background-color: rgba(0, 0, 0, 0.7); /* Darken button on hover for better interaction feedback, matching .modal-nav */
+  text-decoration: none;
+}
+
+/* Mobile - 360px - Contains hover animation */
+.cs-picture {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Adjust modal content for smaller screens */
+@media (max-width: 600px) {
+  #modalContent {
+    width: 100%; /* Use more of the screen width */
+    margin: auto; /* Center the modal content */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-end; /* Align content to the bottom */
+    padding-bottom: 10px; /* Add padding below the image for spacing */
+  }
+
+  #fullSizeImage {
+    max-height: 75vh; /* Limit image height to leave space for navigation */
+    width: auto; /* Maintain image aspect ratio */
+    display: block; /* Ensure image is a block element for proper spacing */
+    margin-bottom: 450px; /* Space between image and navigation buttons */
+  }
+
+  .modal-nav {
+    position: absolute; /* Use absolute positioning for buttons */
+    transform: translateY(0); /* No vertical translation needed */
+    bottom: 20px; /* Distance from the bottom of modalContent */
+    width: 44px; /* Adjust width as per design */
+    height: 44px; /* Adjust height as per design */
+    line-height: 44px; /* Center the arrow vertically */
+    text-align: center; /* Center the arrow horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content vertically */
+    padding: 0; /* Remove padding to ensure flexbox centering works correctly */
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.8); /* Ensure buttons are visible */
+  }
+
+  #prevImage {
+    left: 20px; /* Distance from the left edge of modalContent */
+  }
+
+  #nextImage {
+    right: 20px; /* Distance from the right edge of modalContent */
+  }
+}
+
+/*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+/* Mobile - 360px - Contains hover animation */
+@media only screen and (min-width: 0em) {
+  #gallery {
+    /* Centers button */
+    text-align: center;
+    padding: var(--sectionPadding);
+    position: relative;
+    /* Prevents overflow from the image going off screen */
+    overflow: hidden;
+  }
+  #gallery .cs-container {
+    width: 100%;
+    max-width: 82.625em;
+    margin: auto;
+  }
+  #gallery .cs-image-group {
+    /* used rem so it doesn't scale with the font size of on parent */
+    font-size: min(1.1vw, 1em);
+    width: 100%;
+    max-width: 82.625em;
+    padding: 0;
+    margin: 0 auto 3.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.875em;
+  }
+  #gallery .cs-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.875em;
+  }
+  #gallery .cs-picture {
+    position: relative;
+    display: block;
+  }
+  #gallery .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #gallery .cs-row-1 .cs-picture-1 {
+    width: 26.25em;
+    height: 35.4375em;
+  }
+  #gallery .cs-row-1 .cs-picture-2 {
+    width: 26.25em;
+    height: 39.3125em;
+  }
+  #gallery .cs-row-1 .cs-picture-3 {
+    width: 26.25em;
+    height: 32em;
+  }
+  #gallery .cs-row-2 .cs-picture-1 {
+    width: 26.25em;
+    height: 30.75em;
+  }
+  #gallery .cs-row-2 .cs-picture-2 {
+    width: 26.25em;
+    height: 32.3125em;
+  }
+  #gallery .cs-row-2 .cs-picture-3 {
+    width: 26.25em;
+    height: 39.3125em;
+  }
+  #gallery .cs-row-3 .cs-picture-1 {
+    width: 26.25em;
+    height: 39.0625em;
+  }
+  #gallery .cs-row-3 .cs-picture-2 {
+    width: 26.25em;
+    height: 28.25em;
+  }
+  #gallery .cs-row-3 .cs-picture-3 {
+    width: 26.25em;
+    height: 39.3125em;
+  }
+}
+/*-- -------------------------- -->
+<---    Final Call To Action    -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #cta {
+    position: relative;
+    padding: 3.125rem 0;
+  }
+  #cta:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #cta .container {
+    text-align: center;
+  }
+  #cta picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+  }
+  #cta picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #cta .title {
+    font-weight: 900;
+    font-size: min(9vw, 3rem);
+    line-height: 1.20833333;
+    color: #fff;
+    position: relative;
+    margin-bottom: 2.25rem;
+    text-align: center;
+  }
+  #cta p {
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    margin: auto;
+    margin-bottom: 2.25rem;
+    width: 96%;
+    max-width: 37.375rem;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #cta {
+    padding: 10.5rem 0;
+  }
+}
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  #cta {
+    position: relative;
+    margin-top: 6.25rem;
+  }
+  #cta:before {
+    display: none;
+  }
+  #cta:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 69.25rem;
+    width: 125rem;
+    background: url("/assets/svgs/cta-squares.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -3;
+  }
+  #cta .container {
+    width: 90.0625%;
+    margin: auto;
+  }
+  #cta picture {
+    width: 90.0625%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #cta picture:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #cta:after {
+    display: none;
+  }
+}
