@@ -1,17 +1,14 @@
-const nodemailer = require('nodemailer');
+const mailgun = require('mailgun-js');
 
 exports.handler = async (event, context) => {
   const { name, email, phone, findUs, message } = JSON.parse(event.body);
 
-  const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: 'your-email@gmail.com',
-      pass: 'your-email-password'
-    }
+  const mg = mailgun({
+    apiKey: '6fafb9bf-c3df1eb8',
+    domain: 'sandbox7f8924ef21534d0da2226073e47490b0.mailgun.org'
   });
 
-  const mailOptions = {
+  const data = {
     from: email,
     to: 'jonathannmaynard@gmail.com',
     subject: 'New Contact Form Submission',
@@ -19,7 +16,7 @@ exports.handler = async (event, context) => {
   };
 
   try {
-    await transporter.sendMail(mailOptions);
+    await mg.messages().send(data);
     return {
       statusCode: 200,
       body: JSON.stringify({ message: 'Message sent successfully!' })
